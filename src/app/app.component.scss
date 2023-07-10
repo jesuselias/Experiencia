@@ -1,22 +1,20 @@
-    body {
-        background-color: white;
-        color: black;
-    }
-  
-  body.dark-mode {
-    background-color: black;
-    color: white;
-  }
-  
-  .dark-mode button {
-    color: white;
-  }
+body {
+  background-color: white;
+  color: black;
+}
 
-  .container {
-    height: 100%
-  }
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
 
+.dark-mode button {
+  color: white;
+}
 
+.container {
+  height: 100%
+}
 
 /* Estilos para la lista desplegable */
 .mat-select-panel {
@@ -26,7 +24,6 @@
   background-color: #333;
   color: #fff;
 }
-
 
 .white-background {
   background-color: #251f1f;
@@ -135,3 +132,55 @@
 .custom-select .mat-select-value-text {
   color: #333333;
 }
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 576px) {
+
+    /* Estilos del modo oscuro */
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  .dark-mode button {
+    color: white;
+  }
+
+  /* Estilos adicionales para dispositivos móviles */
+  @media (max-width: 576px) {
+    body.dark-mode {
+      background-color: black;
+      color: white;
+      height: 1000px
+    }
+    
+    .dark-mode button {
+      color: white;
+    }
+  }
+
+  .toggle-label {
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggle-label::after {
+    width: 14px;
+    height: 14px;
+    top: 3px;
+    left: 2px;
+  }
+  
+  .toggle-text {
+    font-size: 12px;
+  }
+  
+  .custom-form-field {
+    font-size: 12px;
+  }
+  
+  .custom-select {
+    font-size: 12px;
+  }
+}
+

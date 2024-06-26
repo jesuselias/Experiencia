@@ -6,6 +6,7 @@ body {
 body.dark-mode {
   background-color: black;
   color: white;
+  min-height: 100vh;
 }
 
 .dark-mode button {

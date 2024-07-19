@@ -31,7 +31,7 @@ export class AppComponent {
   ];
 
   datasetGlobal: any = [{
-            data: [30,40,60,70,90,95],
+            data: [30,40,60,70,90,95,97],
             label: 'JavaScript',
             fill: false,
             tension: 0.5,
@@ -39,7 +39,7 @@ export class AppComponent {
             backgroundColor: 'Yellow'
         },
         {
-          data: [40,45,50,80,90,95],
+          data: [40,45,50,80,90,95,97],
           label: 'TypeScript',
           fill: false,
           tension: 0.5,
@@ -47,7 +47,7 @@ export class AppComponent {
           backgroundColor: 'blue'
         }, 
         {
-          data: [20,30,60,80,90,95],
+          data: [20,30,60,80,90,95,97],
           label: 'Angular',
           fill: false,
           tension: 0.5,
@@ -55,7 +55,7 @@ export class AppComponent {
           backgroundColor: 'red'
         },
         {
-        data: [10,20,70,85,80,80],
+        data: [10,20,70,85,80,80,85],
         label: 'Vue',
         fill: false,
         tension: 0.5,
@@ -63,7 +63,7 @@ export class AppComponent {
         backgroundColor: 'green'
         },
         {
-        data: [15,30,50,80,60,80],
+        data: [15,30,50,80,60,80,90],
         label: 'React',
         fill: false,
         tension: 0.5,
@@ -71,7 +71,7 @@ export class AppComponent {
         backgroundColor: '#0dcaf0'
         },
         {
-        data: [10,30,60,80,70,80],
+        data: [10,30,60,80,70,80,95],
         label: 'React-Native',
         fill: false,
         tension: 0.5,
@@ -79,7 +79,7 @@ export class AppComponent {
         backgroundColor: '#0d6efd'
         },
         {
-        data: [5,10,5,20,60,75],
+        data: [5,10,5,20,60,75,75],
         label: 'Ionic',
         fill: false,
         tension: 0.5,
@@ -87,7 +87,7 @@ export class AppComponent {
         backgroundColor: 'orange'
         },
         {
-        data: [10,50,60,80,70,80],
+        data: [10,50,60,80,70,80,90],
         label: 'Node',
         fill: false,
         tension: 0.5,
@@ -95,7 +95,7 @@ export class AppComponent {
         backgroundColor: '#20c997'
         },
         {
-        data: [30,50,60,50,70,85],
+        data: [30,50,60,50,70,85,95],
         label: 'Java',
         fill: false,
         tension: 0.5,
@@ -103,7 +103,7 @@ export class AppComponent {
         backgroundColor: '#e9ecef'
         },
         {
-        data: [30,50,60,80,50,30],
+        data: [30,50,60,80,50,30,40],
         label: 'C#',
         fill: false,
         tension: 0.5,
@@ -141,7 +141,7 @@ export class AppComponent {
     this.chart = new Chart('canvas', {
       type: 'line',
       data: {
-          labels: [2018,2019,2020,2021,2022,2023],
+          labels: [2018,2019,2020,2021,2022,2023,2024],
           datasets:  this.datasetGlobal.filter((data:any) => {
           if(this.selectedOptions.length > 0) {
             return this.selectedOptions.some(option => option === data.label);
@@ -183,7 +183,7 @@ export class AppComponent {
       this.chart = new Chart('canvas', {
         type: 'line',
         data: {
-            labels: [2018,2019,2020,2021,2022,2023],
+            labels: [2018,2019,2020,2021,2022,2023,2024],
             datasets: this.datasetGlobal
         },
         

@@ -26,7 +26,8 @@ export class AppComponent {
     'React-Native', 
     'Ionic', 
     'Node', 
-    'Java', 
+    'Java',
+    'Laravel', 
     'C#'
   ];
 
@@ -55,13 +56,21 @@ export class AppComponent {
           backgroundColor: 'red'
         },
         {
-        data: [10,20,70,85,80,80,85],
+        data: [10,20,70,85,80,80,97],
         label: 'Vue',
         fill: false,
         tension: 0.5,
         borderColor: 'green',
         backgroundColor: 'green'
         },
+        {
+          data: [10,20,70,60,67,80,95],
+          label: 'Laravel',
+          fill: false,
+          tension: 0.5,
+          borderColor: 'orange',
+          backgroundColor: 'orange'
+          },
         {
         data: [15,30,50,80,60,80,90],
         label: 'React',
@@ -83,8 +92,8 @@ export class AppComponent {
         label: 'Ionic',
         fill: false,
         tension: 0.5,
-        borderColor: 'orange',
-        backgroundColor: 'orange'
+        borderColor: '#675bcb',
+        backgroundColor: '#675bcb'
         },
         {
         data: [10,50,60,80,70,80,90],
